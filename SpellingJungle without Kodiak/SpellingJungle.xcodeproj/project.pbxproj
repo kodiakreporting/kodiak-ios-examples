@@ -1,0 +1,534 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		430B060714F841E400F8B7D5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 430B060614F841E400F8B7D5 /* UIKit.framework */; };
+		430B060914F841E400F8B7D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 430B060814F841E400F8B7D5 /* Foundation.framework */; };
+		430B060B14F841E400F8B7D5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 430B060A14F841E400F8B7D5 /* CoreGraphics.framework */; };
+		430B061114F841E400F8B7D5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 430B060F14F841E400F8B7D5 /* InfoPlist.strings */; };
+		430B061314F841E400F8B7D5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 430B061214F841E400F8B7D5 /* main.m */; };
+		430B061714F841E400F8B7D5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 430B061614F841E400F8B7D5 /* AppDelegate.m */; };
+		430B061A14F841E400F8B7D5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 430B061914F841E400F8B7D5 /* ViewController.m */; };
+		430B061D14F841E400F8B7D5 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 430B061B14F841E400F8B7D5 /* ViewController.xib */; };
+		430B062C14F844BE00F8B7D5 /* UnscrambleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 430B062A14F844BE00F8B7D5 /* UnscrambleViewController.m */; };
+		430B062D14F844BE00F8B7D5 /* UnscrambleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 430B062B14F844BE00F8B7D5 /* UnscrambleViewController.xib */; };
+		430B063114F844F800F8B7D5 /* SpellingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 430B062F14F844F800F8B7D5 /* SpellingViewController.m */; };
+		430B063214F844F800F8B7D5 /* SpellingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 430B063014F844F800F8B7D5 /* SpellingViewController.xib */; };
+		430B064114F88A4300F8B7D5 /* SoundManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 430B064014F88A3900F8B7D5 /* SoundManager.m */; };
+		430B065B14F88E4600F8B7D5 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 430B065914F88E4600F8B7D5 /* CoreAudio.framework */; };
+		430B065D14F88E8B00F8B7D5 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 430B065C14F88E8B00F8B7D5 /* OpenAL.framework */; };
+		430B065F14F88E9300F8B7D5 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 430B065E14F88E9300F8B7D5 /* AudioToolbox.framework */; };
+		430B066114F88EA500F8B7D5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 430B066014F88EA500F8B7D5 /* AVFoundation.framework */; };
+		430B068214F88EEE00F8B7D5 /* continue.png in Resources */ = {isa = PBXBuildFile; fileRef = 430B067014F88EEE00F8B7D5 /* continue.png */; };
+		430B068314F88EEE00F8B7D5 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 430B067114F88EEE00F8B7D5 /* home.png */; };
+		430B068514F88EEE00F8B7D5 /* monkey1.png in Resources */ = {isa = PBXBuildFile; fileRef = 430B067314F88EEE00F8B7D5 /* monkey1.png */; };
+		430B068614F88EEE00F8B7D5 /* monkey2.png in Resources */ = {isa = PBXBuildFile; fileRef = 430B067414F88EEE00F8B7D5 /* monkey2.png */; };
+		430B068714F88EEE00F8B7D5 /* spelling.png in Resources */ = {isa = PBXBuildFile; fileRef = 430B067514F88EEE00F8B7D5 /* spelling.png */; };
+		430B068914F88EF600F8B7D5 /* animals in Resources */ = {isa = PBXBuildFile; fileRef = 430B068814F88EF600F8B7D5 /* animals */; };
+		430B069A14F88FF200F8B7D5 /* background.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 430B068B14F88FF200F8B7D5 /* background.mp3 */; };
+		430B069B14F88FF200F8B7D5 /* bear.wav in Resources */ = {isa = PBXBuildFile; fileRef = 430B068C14F88FF200F8B7D5 /* bear.wav */; };
+		430B069C14F88FF200F8B7D5 /* elephant.wav in Resources */ = {isa = PBXBuildFile; fileRef = 430B068D14F88FF200F8B7D5 /* elephant.wav */; };
+		430B069D14F88FF200F8B7D5 /* fail.wav in Resources */ = {isa = PBXBuildFile; fileRef = 430B068E14F88FF200F8B7D5 /* fail.wav */; };
+		430B069E14F88FF200F8B7D5 /* fanfare.wav in Resources */ = {isa = PBXBuildFile; fileRef = 430B068F14F88FF200F8B7D5 /* fanfare.wav */; };
+		430B069F14F88FF200F8B7D5 /* giraffe.wav in Resources */ = {isa = PBXBuildFile; fileRef = 430B069014F88FF200F8B7D5 /* giraffe.wav */; };
+		430B06A014F88FF200F8B7D5 /* hippo.wav in Resources */ = {isa = PBXBuildFile; fileRef = 430B069114F88FF200F8B7D5 /* hippo.wav */; };
+		430B06A114F88FF200F8B7D5 /* lion.wav in Resources */ = {isa = PBXBuildFile; fileRef = 430B069214F88FF200F8B7D5 /* lion.wav */; };
+		430B06A214F88FF200F8B7D5 /* monkey.wav in Resources */ = {isa = PBXBuildFile; fileRef = 430B069314F88FF200F8B7D5 /* monkey.wav */; };
+		430B06A314F88FF200F8B7D5 /* parrot.wav in Resources */ = {isa = PBXBuildFile; fileRef = 430B069414F88FF200F8B7D5 /* parrot.wav */; };
+		430B06A414F88FF200F8B7D5 /* reindeer.wav in Resources */ = {isa = PBXBuildFile; fileRef = 430B069514F88FF200F8B7D5 /* reindeer.wav */; };
+		430B06A514F88FF200F8B7D5 /* rhinocerous.wav in Resources */ = {isa = PBXBuildFile; fileRef = 430B069614F88FF200F8B7D5 /* rhinocerous.wav */; };
+		430B06A614F88FF200F8B7D5 /* snake.wav in Resources */ = {isa = PBXBuildFile; fileRef = 430B069714F88FF200F8B7D5 /* snake.wav */; };
+		430B06A714F88FF200F8B7D5 /* tiger.wav in Resources */ = {isa = PBXBuildFile; fileRef = 430B069814F88FF200F8B7D5 /* tiger.wav */; };
+		430B06A814F88FF200F8B7D5 /* zebra.wav in Resources */ = {isa = PBXBuildFile; fileRef = 430B069914F88FF200F8B7D5 /* zebra.wav */; };
+		43AAA24614FB5B5E00EDE5B0 /* letter_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 43AAA24414FB5B5E00EDE5B0 /* letter_button.png */; };
+		43AAA24714FB5B5E00EDE5B0 /* letter_spot.png in Resources */ = {isa = PBXBuildFile; fileRef = 43AAA24514FB5B5E00EDE5B0 /* letter_spot.png */; };
+		43AAA24A14FB5CAD00EDE5B0 /* unscramble.png in Resources */ = {isa = PBXBuildFile; fileRef = 43AAA24914FB5CAD00EDE5B0 /* unscramble.png */; };
+		43AAA24D14FB605900EDE5B0 /* pickup.wav in Resources */ = {isa = PBXBuildFile; fileRef = 43AAA24B14FB605900EDE5B0 /* pickup.wav */; };
+		43AAA24E14FB605900EDE5B0 /* place.wav in Resources */ = {isa = PBXBuildFile; fileRef = 43AAA24C14FB605900EDE5B0 /* place.wav */; };
+		43AAA25114FB660800EDE5B0 /* AnimalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AAA25014FB660800EDE5B0 /* AnimalView.m */; };
+		43AAA25814FB6D0400EDE5B0 /* wood_button_down.png in Resources */ = {isa = PBXBuildFile; fileRef = 43AAA25614FB6D0400EDE5B0 /* wood_button_down.png */; };
+		43AAA25914FB6D0400EDE5B0 /* wood_button_up.png in Resources */ = {isa = PBXBuildFile; fileRef = 43AAA25714FB6D0400EDE5B0 /* wood_button_up.png */; };
+		43AAA25B14FB70F200EDE5B0 /* wood_button_highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 43AAA25A14FB70F200EDE5B0 /* wood_button_highlighted.png */; };
+		43AAA25E14FB796700EDE5B0 /* spellprompt.wav in Resources */ = {isa = PBXBuildFile; fileRef = 43AAA25C14FB796700EDE5B0 /* spellprompt.wav */; };
+		43AAA25F14FB796700EDE5B0 /* tryagain.wav in Resources */ = {isa = PBXBuildFile; fileRef = 43AAA25D14FB796700EDE5B0 /* tryagain.wav */; };
+		43AAA26114FB7AA300EDE5B0 /* notquite.wav in Resources */ = {isa = PBXBuildFile; fileRef = 43AAA26014FB7AA300EDE5B0 /* notquite.wav */; };
+		43AAA26814FB7C5F00EDE5B0 /* NiceWorkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AAA26614FB7C5F00EDE5B0 /* NiceWorkViewController.m */; };
+		43AAA26914FB7C5F00EDE5B0 /* NiceWorkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43AAA26714FB7C5F00EDE5B0 /* NiceWorkViewController.xib */; };
+		43AAA26B14FB7C7400EDE5B0 /* nicework.png in Resources */ = {isa = PBXBuildFile; fileRef = 43AAA26A14FB7C7400EDE5B0 /* nicework.png */; };
+		43AAA26D14FB7F8B00EDE5B0 /* trophy.png in Resources */ = {isa = PBXBuildFile; fileRef = 43AAA26C14FB7F8B00EDE5B0 /* trophy.png */; };
+		43AAA26F14FB833F00EDE5B0 /* libFinch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 43AAA26E14FB833F00EDE5B0 /* libFinch.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		430B060214F841E400F8B7D5 /* SpellingJungle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpellingJungle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		430B060614F841E400F8B7D5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		430B060814F841E400F8B7D5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		430B060A14F841E400F8B7D5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		430B060E14F841E400F8B7D5 /* SpellingJungle-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpellingJungle-Info.plist"; sourceTree = "<group>"; };
+		430B061014F841E400F8B7D5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		430B061214F841E400F8B7D5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		430B061414F841E400F8B7D5 /* SpellingJungle-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpellingJungle-Prefix.pch"; sourceTree = "<group>"; };
+		430B061514F841E400F8B7D5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		430B061614F841E400F8B7D5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		430B061814F841E400F8B7D5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		430B061914F841E400F8B7D5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		430B061C14F841E400F8B7D5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		430B062914F844BE00F8B7D5 /* UnscrambleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnscrambleViewController.h; sourceTree = "<group>"; };
+		430B062A14F844BE00F8B7D5 /* UnscrambleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnscrambleViewController.m; sourceTree = "<group>"; };
+		430B062B14F844BE00F8B7D5 /* UnscrambleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UnscrambleViewController.xib; sourceTree = "<group>"; };
+		430B062E14F844F800F8B7D5 /* SpellingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpellingViewController.h; sourceTree = "<group>"; };
+		430B062F14F844F800F8B7D5 /* SpellingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpellingViewController.m; sourceTree = "<group>"; };
+		430B063014F844F800F8B7D5 /* SpellingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SpellingViewController.xib; sourceTree = "<group>"; };
+		430B063F14F88A3900F8B7D5 /* SoundManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SoundManager.h; sourceTree = "<group>"; };
+		430B064014F88A3900F8B7D5 /* SoundManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SoundManager.m; sourceTree = "<group>"; };
+		430B064314F88E3300F8B7D5 /* FIError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FIError.h; sourceTree = "<group>"; };
+		430B064414F88E3300F8B7D5 /* FIErrorReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FIErrorReporter.h; sourceTree = "<group>"; };
+		430B064614F88E3300F8B7D5 /* FIFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FIFactory.h; sourceTree = "<group>"; };
+		430B064914F88E3300F8B7D5 /* FILogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FILogger.h; sourceTree = "<group>"; };
+		430B064B14F88E3300F8B7D5 /* FIRevolverSound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FIRevolverSound.h; sourceTree = "<group>"; };
+		430B064D14F88E3300F8B7D5 /* FISound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISound.h; sourceTree = "<group>"; };
+		430B064F14F88E3300F8B7D5 /* FISoundEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISoundEngine.h; sourceTree = "<group>"; };
+		430B065814F88E4600F8B7D5 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		430B065914F88E4600F8B7D5 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		430B065C14F88E8B00F8B7D5 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		430B065E14F88E9300F8B7D5 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		430B066014F88EA500F8B7D5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		430B067014F88EEE00F8B7D5 /* continue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = continue.png; sourceTree = "<group>"; };
+		430B067114F88EEE00F8B7D5 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
+		430B067314F88EEE00F8B7D5 /* monkey1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monkey1.png; sourceTree = "<group>"; };
+		430B067414F88EEE00F8B7D5 /* monkey2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monkey2.png; sourceTree = "<group>"; };
+		430B067514F88EEE00F8B7D5 /* spelling.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spelling.png; sourceTree = "<group>"; };
+		430B068814F88EF600F8B7D5 /* animals */ = {isa = PBXFileReference; lastKnownFileType = folder; path = animals; sourceTree = "<group>"; };
+		430B068B14F88FF200F8B7D5 /* background.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = background.mp3; sourceTree = "<group>"; };
+		430B068C14F88FF200F8B7D5 /* bear.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bear.wav; sourceTree = "<group>"; };
+		430B068D14F88FF200F8B7D5 /* elephant.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = elephant.wav; sourceTree = "<group>"; };
+		430B068E14F88FF200F8B7D5 /* fail.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = fail.wav; sourceTree = "<group>"; };
+		430B068F14F88FF200F8B7D5 /* fanfare.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = fanfare.wav; sourceTree = "<group>"; };
+		430B069014F88FF200F8B7D5 /* giraffe.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = giraffe.wav; sourceTree = "<group>"; };
+		430B069114F88FF200F8B7D5 /* hippo.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hippo.wav; sourceTree = "<group>"; };
+		430B069214F88FF200F8B7D5 /* lion.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lion.wav; sourceTree = "<group>"; };
+		430B069314F88FF200F8B7D5 /* monkey.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = monkey.wav; sourceTree = "<group>"; };
+		430B069414F88FF200F8B7D5 /* parrot.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = parrot.wav; sourceTree = "<group>"; };
+		430B069514F88FF200F8B7D5 /* reindeer.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = reindeer.wav; sourceTree = "<group>"; };
+		430B069614F88FF200F8B7D5 /* rhinocerous.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = rhinocerous.wav; sourceTree = "<group>"; };
+		430B069714F88FF200F8B7D5 /* snake.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = snake.wav; sourceTree = "<group>"; };
+		430B069814F88FF200F8B7D5 /* tiger.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = tiger.wav; sourceTree = "<group>"; };
+		430B069914F88FF200F8B7D5 /* zebra.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = zebra.wav; sourceTree = "<group>"; };
+		43AAA24414FB5B5E00EDE5B0 /* letter_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = letter_button.png; sourceTree = "<group>"; };
+		43AAA24514FB5B5E00EDE5B0 /* letter_spot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = letter_spot.png; sourceTree = "<group>"; };
+		43AAA24914FB5CAD00EDE5B0 /* unscramble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unscramble.png; sourceTree = "<group>"; };
+		43AAA24B14FB605900EDE5B0 /* pickup.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pickup.wav; sourceTree = "<group>"; };
+		43AAA24C14FB605900EDE5B0 /* place.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = place.wav; sourceTree = "<group>"; };
+		43AAA24F14FB660800EDE5B0 /* AnimalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimalView.h; sourceTree = "<group>"; };
+		43AAA25014FB660800EDE5B0 /* AnimalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimalView.m; sourceTree = "<group>"; };
+		43AAA25614FB6D0400EDE5B0 /* wood_button_down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wood_button_down.png; sourceTree = "<group>"; };
+		43AAA25714FB6D0400EDE5B0 /* wood_button_up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wood_button_up.png; sourceTree = "<group>"; };
+		43AAA25A14FB70F200EDE5B0 /* wood_button_highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wood_button_highlighted.png; sourceTree = "<group>"; };
+		43AAA25C14FB796700EDE5B0 /* spellprompt.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = spellprompt.wav; sourceTree = "<group>"; };
+		43AAA25D14FB796700EDE5B0 /* tryagain.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = tryagain.wav; sourceTree = "<group>"; };
+		43AAA26014FB7AA300EDE5B0 /* notquite.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = notquite.wav; sourceTree = "<group>"; };
+		43AAA26514FB7C5F00EDE5B0 /* NiceWorkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NiceWorkViewController.h; sourceTree = "<group>"; };
+		43AAA26614FB7C5F00EDE5B0 /* NiceWorkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NiceWorkViewController.m; sourceTree = "<group>"; };
+		43AAA26714FB7C5F00EDE5B0 /* NiceWorkViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NiceWorkViewController.xib; sourceTree = "<group>"; };
+		43AAA26A14FB7C7400EDE5B0 /* nicework.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nicework.png; sourceTree = "<group>"; };
+		43AAA26C14FB7F8B00EDE5B0 /* trophy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trophy.png; sourceTree = "<group>"; };
+		43AAA26E14FB833F00EDE5B0 /* libFinch.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFinch.a; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		430B05FF14F841E400F8B7D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				430B066114F88EA500F8B7D5 /* AVFoundation.framework in Frameworks */,
+				430B065F14F88E9300F8B7D5 /* AudioToolbox.framework in Frameworks */,
+				430B065D14F88E8B00F8B7D5 /* OpenAL.framework in Frameworks */,
+				430B065B14F88E4600F8B7D5 /* CoreAudio.framework in Frameworks */,
+				430B060714F841E400F8B7D5 /* UIKit.framework in Frameworks */,
+				430B060914F841E400F8B7D5 /* Foundation.framework in Frameworks */,
+				430B060B14F841E400F8B7D5 /* CoreGraphics.framework in Frameworks */,
+				43AAA26F14FB833F00EDE5B0 /* libFinch.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		430B05F714F841E400F8B7D5 = {
+			isa = PBXGroup;
+			children = (
+				430B066014F88EA500F8B7D5 /* AVFoundation.framework */,
+				430B065E14F88E9300F8B7D5 /* AudioToolbox.framework */,
+				430B065C14F88E8B00F8B7D5 /* OpenAL.framework */,
+				430B065814F88E4600F8B7D5 /* AudioUnit.framework */,
+				430B065914F88E4600F8B7D5 /* CoreAudio.framework */,
+				430B060C14F841E400F8B7D5 /* SpellingJungle */,
+				430B060514F841E400F8B7D5 /* Frameworks */,
+				430B060314F841E400F8B7D5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		430B060314F841E400F8B7D5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				430B060214F841E400F8B7D5 /* SpellingJungle.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		430B060514F841E400F8B7D5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				43AAA26E14FB833F00EDE5B0 /* libFinch.a */,
+				430B060614F841E400F8B7D5 /* UIKit.framework */,
+				430B060814F841E400F8B7D5 /* Foundation.framework */,
+				430B060A14F841E400F8B7D5 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		430B060C14F841E400F8B7D5 /* SpellingJungle */ = {
+			isa = PBXGroup;
+			children = (
+				430B064214F88E3300F8B7D5 /* Finch */,
+				43AAA24F14FB660800EDE5B0 /* AnimalView.h */,
+				43AAA25014FB660800EDE5B0 /* AnimalView.m */,
+				430B061514F841E400F8B7D5 /* AppDelegate.h */,
+				430B061614F841E400F8B7D5 /* AppDelegate.m */,
+				430B063F14F88A3900F8B7D5 /* SoundManager.h */,
+				430B064014F88A3900F8B7D5 /* SoundManager.m */,
+				430B061814F841E400F8B7D5 /* ViewController.h */,
+				430B061914F841E400F8B7D5 /* ViewController.m */,
+				430B061B14F841E400F8B7D5 /* ViewController.xib */,
+				430B062E14F844F800F8B7D5 /* SpellingViewController.h */,
+				430B062F14F844F800F8B7D5 /* SpellingViewController.m */,
+				430B063014F844F800F8B7D5 /* SpellingViewController.xib */,
+				430B062914F844BE00F8B7D5 /* UnscrambleViewController.h */,
+				430B062A14F844BE00F8B7D5 /* UnscrambleViewController.m */,
+				430B062B14F844BE00F8B7D5 /* UnscrambleViewController.xib */,
+				43AAA26514FB7C5F00EDE5B0 /* NiceWorkViewController.h */,
+				43AAA26614FB7C5F00EDE5B0 /* NiceWorkViewController.m */,
+				43AAA26714FB7C5F00EDE5B0 /* NiceWorkViewController.xib */,
+				430B060D14F841E400F8B7D5 /* Supporting Files */,
+			);
+			path = SpellingJungle;
+			sourceTree = "<group>";
+		};
+		430B060D14F841E400F8B7D5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				430B068A14F88FF200F8B7D5 /* Sounds */,
+				430B066214F88EEE00F8B7D5 /* Images */,
+				430B060E14F841E400F8B7D5 /* SpellingJungle-Info.plist */,
+				430B060F14F841E400F8B7D5 /* InfoPlist.strings */,
+				430B061214F841E400F8B7D5 /* main.m */,
+				430B061414F841E400F8B7D5 /* SpellingJungle-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		430B064214F88E3300F8B7D5 /* Finch */ = {
+			isa = PBXGroup;
+			children = (
+				430B064314F88E3300F8B7D5 /* FIError.h */,
+				430B064414F88E3300F8B7D5 /* FIErrorReporter.h */,
+				430B064614F88E3300F8B7D5 /* FIFactory.h */,
+				430B064914F88E3300F8B7D5 /* FILogger.h */,
+				430B064B14F88E3300F8B7D5 /* FIRevolverSound.h */,
+				430B064D14F88E3300F8B7D5 /* FISound.h */,
+				430B064F14F88E3300F8B7D5 /* FISoundEngine.h */,
+			);
+			path = Finch;
+			sourceTree = "<group>";
+		};
+		430B066214F88EEE00F8B7D5 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				430B068814F88EF600F8B7D5 /* animals */,
+				430B067014F88EEE00F8B7D5 /* continue.png */,
+				43AAA26A14FB7C7400EDE5B0 /* nicework.png */,
+				43AAA26C14FB7F8B00EDE5B0 /* trophy.png */,
+				430B067114F88EEE00F8B7D5 /* home.png */,
+				43AAA25614FB6D0400EDE5B0 /* wood_button_down.png */,
+				43AAA25714FB6D0400EDE5B0 /* wood_button_up.png */,
+				43AAA25A14FB70F200EDE5B0 /* wood_button_highlighted.png */,
+				430B067314F88EEE00F8B7D5 /* monkey1.png */,
+				430B067414F88EEE00F8B7D5 /* monkey2.png */,
+				43AAA24914FB5CAD00EDE5B0 /* unscramble.png */,
+				430B067514F88EEE00F8B7D5 /* spelling.png */,
+				43AAA24414FB5B5E00EDE5B0 /* letter_button.png */,
+				43AAA24514FB5B5E00EDE5B0 /* letter_spot.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		430B068A14F88FF200F8B7D5 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				43AAA24B14FB605900EDE5B0 /* pickup.wav */,
+				43AAA24C14FB605900EDE5B0 /* place.wav */,
+				43AAA26014FB7AA300EDE5B0 /* notquite.wav */,
+				43AAA25C14FB796700EDE5B0 /* spellprompt.wav */,
+				43AAA25D14FB796700EDE5B0 /* tryagain.wav */,
+				430B068B14F88FF200F8B7D5 /* background.mp3 */,
+				430B068C14F88FF200F8B7D5 /* bear.wav */,
+				430B068D14F88FF200F8B7D5 /* elephant.wav */,
+				430B068E14F88FF200F8B7D5 /* fail.wav */,
+				430B068F14F88FF200F8B7D5 /* fanfare.wav */,
+				430B069014F88FF200F8B7D5 /* giraffe.wav */,
+				430B069114F88FF200F8B7D5 /* hippo.wav */,
+				430B069214F88FF200F8B7D5 /* lion.wav */,
+				430B069314F88FF200F8B7D5 /* monkey.wav */,
+				430B069414F88FF200F8B7D5 /* parrot.wav */,
+				430B069514F88FF200F8B7D5 /* reindeer.wav */,
+				430B069614F88FF200F8B7D5 /* rhinocerous.wav */,
+				430B069714F88FF200F8B7D5 /* snake.wav */,
+				430B069814F88FF200F8B7D5 /* tiger.wav */,
+				430B069914F88FF200F8B7D5 /* zebra.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		430B060114F841E400F8B7D5 /* SpellingJungle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 430B062014F841E400F8B7D5 /* Build configuration list for PBXNativeTarget "SpellingJungle" */;
+			buildPhases = (
+				430B05FE14F841E400F8B7D5 /* Sources */,
+				430B05FF14F841E400F8B7D5 /* Frameworks */,
+				430B060014F841E400F8B7D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpellingJungle;
+			productName = SpellingJungle;
+			productReference = 430B060214F841E400F8B7D5 /* SpellingJungle.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		430B05F914F841E400F8B7D5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 430B05FC14F841E400F8B7D5 /* Build configuration list for PBXProject "SpellingJungle" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 430B05F714F841E400F8B7D5;
+			productRefGroup = 430B060314F841E400F8B7D5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				430B060114F841E400F8B7D5 /* SpellingJungle */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		430B060014F841E400F8B7D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				430B061114F841E400F8B7D5 /* InfoPlist.strings in Resources */,
+				430B061D14F841E400F8B7D5 /* ViewController.xib in Resources */,
+				430B062D14F844BE00F8B7D5 /* UnscrambleViewController.xib in Resources */,
+				430B063214F844F800F8B7D5 /* SpellingViewController.xib in Resources */,
+				430B068214F88EEE00F8B7D5 /* continue.png in Resources */,
+				430B068314F88EEE00F8B7D5 /* home.png in Resources */,
+				430B068514F88EEE00F8B7D5 /* monkey1.png in Resources */,
+				430B068614F88EEE00F8B7D5 /* monkey2.png in Resources */,
+				430B068714F88EEE00F8B7D5 /* spelling.png in Resources */,
+				430B068914F88EF600F8B7D5 /* animals in Resources */,
+				430B069A14F88FF200F8B7D5 /* background.mp3 in Resources */,
+				430B069B14F88FF200F8B7D5 /* bear.wav in Resources */,
+				430B069C14F88FF200F8B7D5 /* elephant.wav in Resources */,
+				430B069D14F88FF200F8B7D5 /* fail.wav in Resources */,
+				430B069E14F88FF200F8B7D5 /* fanfare.wav in Resources */,
+				430B069F14F88FF200F8B7D5 /* giraffe.wav in Resources */,
+				430B06A014F88FF200F8B7D5 /* hippo.wav in Resources */,
+				430B06A114F88FF200F8B7D5 /* lion.wav in Resources */,
+				430B06A214F88FF200F8B7D5 /* monkey.wav in Resources */,
+				430B06A314F88FF200F8B7D5 /* parrot.wav in Resources */,
+				430B06A414F88FF200F8B7D5 /* reindeer.wav in Resources */,
+				430B06A514F88FF200F8B7D5 /* rhinocerous.wav in Resources */,
+				430B06A614F88FF200F8B7D5 /* snake.wav in Resources */,
+				430B06A714F88FF200F8B7D5 /* tiger.wav in Resources */,
+				430B06A814F88FF200F8B7D5 /* zebra.wav in Resources */,
+				43AAA24614FB5B5E00EDE5B0 /* letter_button.png in Resources */,
+				43AAA24714FB5B5E00EDE5B0 /* letter_spot.png in Resources */,
+				43AAA24A14FB5CAD00EDE5B0 /* unscramble.png in Resources */,
+				43AAA24D14FB605900EDE5B0 /* pickup.wav in Resources */,
+				43AAA24E14FB605900EDE5B0 /* place.wav in Resources */,
+				43AAA25814FB6D0400EDE5B0 /* wood_button_down.png in Resources */,
+				43AAA25914FB6D0400EDE5B0 /* wood_button_up.png in Resources */,
+				43AAA25B14FB70F200EDE5B0 /* wood_button_highlighted.png in Resources */,
+				43AAA25E14FB796700EDE5B0 /* spellprompt.wav in Resources */,
+				43AAA25F14FB796700EDE5B0 /* tryagain.wav in Resources */,
+				43AAA26114FB7AA300EDE5B0 /* notquite.wav in Resources */,
+				43AAA26914FB7C5F00EDE5B0 /* NiceWorkViewController.xib in Resources */,
+				43AAA26B14FB7C7400EDE5B0 /* nicework.png in Resources */,
+				43AAA26D14FB7F8B00EDE5B0 /* trophy.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		430B05FE14F841E400F8B7D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				430B061314F841E400F8B7D5 /* main.m in Sources */,
+				430B061714F841E400F8B7D5 /* AppDelegate.m in Sources */,
+				430B061A14F841E400F8B7D5 /* ViewController.m in Sources */,
+				430B062C14F844BE00F8B7D5 /* UnscrambleViewController.m in Sources */,
+				430B063114F844F800F8B7D5 /* SpellingViewController.m in Sources */,
+				430B064114F88A4300F8B7D5 /* SoundManager.m in Sources */,
+				43AAA25114FB660800EDE5B0 /* AnimalView.m in Sources */,
+				43AAA26814FB7C5F00EDE5B0 /* NiceWorkViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		430B060F14F841E400F8B7D5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				430B061014F841E400F8B7D5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		430B061B14F841E400F8B7D5 /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				430B061C14F841E400F8B7D5 /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		430B061E14F841E400F8B7D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		430B061F14F841E400F8B7D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		430B062114F841E400F8B7D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"/Users/bengotow/Desktop/Kodiak_75593b6d3bb4/iOS SDK/build/Debug-iphonesimulator\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpellingJungle/SpellingJungle-Prefix.pch";
+				INFOPLIST_FILE = "SpellingJungle/SpellingJungle-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		430B062214F841E400F8B7D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"/Users/bengotow/Desktop/Kodiak_75593b6d3bb4/iOS SDK/build/Debug-iphonesimulator\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpellingJungle/SpellingJungle-Prefix.pch";
+				INFOPLIST_FILE = "SpellingJungle/SpellingJungle-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		430B05FC14F841E400F8B7D5 /* Build configuration list for PBXProject "SpellingJungle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				430B061E14F841E400F8B7D5 /* Debug */,
+				430B061F14F841E400F8B7D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		430B062014F841E400F8B7D5 /* Build configuration list for PBXNativeTarget "SpellingJungle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				430B062114F841E400F8B7D5 /* Debug */,
+				430B062214F841E400F8B7D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 430B05F914F841E400F8B7D5 /* Project object */;
+}
