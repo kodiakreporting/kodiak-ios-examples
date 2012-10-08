@@ -28,7 +28,7 @@
     // get the Kodiak button and attach it to our view
     KodiakButton * b = [[KodiakReportingManager sharedManager] kodiakButtonWithType: KodiakButtonTypeBig];
     [b setFrameOrigin: CGPointMake(670,630)];
-    [b setTheme:KodiakButtonThemeClear];
+    [b setTheme:KodiakButtonThemeLight];
     [self.view addSubview: b];
 }
 
@@ -60,6 +60,17 @@
 - (void)viewDidDisappear:(BOOL)animated
 {
 	[super viewDidDisappear:animated];
+}
+
+
+- (BOOL)shouldAutorotate
+{
+    return YES;
+}
+
+- (NSUInteger)supportedInterfaceOrientations
+{
+    return UIInterfaceOrientationMaskLandscape;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation

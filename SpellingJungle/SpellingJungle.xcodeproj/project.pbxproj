@@ -49,8 +49,6 @@
 		435B5ADF14FBEC330051EF11 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 435B5ADE14FBEC330051EF11 /* MobileCoreServices.framework */; };
 		435B5AE114FBEC3F0051EF11 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 435B5AE014FBEC3F0051EF11 /* SystemConfiguration.framework */; };
 		435B5AE314FBEC4C0051EF11 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 435B5AE214FBEC4C0051EF11 /* libz.dylib */; };
-		435B5B3F14FBFDFC0051EF11 /* KodiakResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 435B5B3E14FBFDFC0051EF11 /* KodiakResources.bundle */; };
-		4398F7FD150A6862008C5BCE /* KodiakReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4398F7FC150A6862008C5BCE /* KodiakReporting.framework */; };
 		43AAA24614FB5B5E00EDE5B0 /* letter_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 43AAA24414FB5B5E00EDE5B0 /* letter_button.png */; };
 		43AAA24714FB5B5E00EDE5B0 /* letter_spot.png in Resources */ = {isa = PBXBuildFile; fileRef = 43AAA24514FB5B5E00EDE5B0 /* letter_spot.png */; };
 		43AAA24A14FB5CAD00EDE5B0 /* unscramble.png in Resources */ = {isa = PBXBuildFile; fileRef = 43AAA24914FB5CAD00EDE5B0 /* unscramble.png */; };
@@ -69,6 +67,8 @@
 		43AAA26D14FB7F8B00EDE5B0 /* trophy.png in Resources */ = {isa = PBXBuildFile; fileRef = 43AAA26C14FB7F8B00EDE5B0 /* trophy.png */; };
 		43AAA26F14FB833F00EDE5B0 /* libFinch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 43AAA26E14FB833F00EDE5B0 /* libFinch.a */; };
 		43C4A17C14FC280F0085FAB4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43C4A17B14FC280F0085FAB4 /* QuartzCore.framework */; };
+		43F4E49A1622B42C0017B116 /* KodiakResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 43F4E4991622B42C0017B116 /* KodiakResources.bundle */; };
+		43F4E49C1622B4310017B116 /* KodiakReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43F4E49B1622B4310017B116 /* KodiakReporting.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -130,8 +130,6 @@
 		435B5ADE14FBEC330051EF11 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		435B5AE014FBEC3F0051EF11 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		435B5AE214FBEC4C0051EF11 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		435B5B3E14FBFDFC0051EF11 /* KodiakResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = KodiakResources.bundle; path = "../../../iOS SDK/build/Debug-universal/KodiakResources.bundle"; sourceTree = "<group>"; };
-		4398F7FC150A6862008C5BCE /* KodiakReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KodiakReporting.framework; path = "../../iOS SDK/Releases/Kodiak iOS SDK 1.0/KodiakReporting.framework"; sourceTree = "<group>"; };
 		43AAA24414FB5B5E00EDE5B0 /* letter_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = letter_button.png; sourceTree = "<group>"; };
 		43AAA24514FB5B5E00EDE5B0 /* letter_spot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = letter_spot.png; sourceTree = "<group>"; };
 		43AAA24914FB5CAD00EDE5B0 /* unscramble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unscramble.png; sourceTree = "<group>"; };
@@ -152,6 +150,8 @@
 		43AAA26C14FB7F8B00EDE5B0 /* trophy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trophy.png; sourceTree = "<group>"; };
 		43AAA26E14FB833F00EDE5B0 /* libFinch.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFinch.a; sourceTree = "<group>"; };
 		43C4A17B14FC280F0085FAB4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		43F4E4991622B42C0017B116 /* KodiakResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = KodiakResources.bundle; path = ../../../KodiakResources.bundle; sourceTree = "<group>"; };
+		43F4E49B1622B4310017B116 /* KodiakReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KodiakReporting.framework; path = ../../../KodiakReporting.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,7 +172,7 @@
 				430B060914F841E400F8B7D5 /* Foundation.framework in Frameworks */,
 				430B060B14F841E400F8B7D5 /* CoreGraphics.framework in Frameworks */,
 				43AAA26F14FB833F00EDE5B0 /* libFinch.a in Frameworks */,
-				4398F7FD150A6862008C5BCE /* KodiakReporting.framework in Frameworks */,
+				43F4E49C1622B4310017B116 /* KodiakReporting.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,7 +199,6 @@
 		430B060514F841E400F8B7D5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4398F7FC150A6862008C5BCE /* KodiakReporting.framework */,
 				43AAA26E14FB833F00EDE5B0 /* libFinch.a */,
 				43C4A17B14FC280F0085FAB4 /* QuartzCore.framework */,
 				435B5AE214FBEC4C0051EF11 /* libz.dylib */,
@@ -248,7 +247,8 @@
 		430B060D14F841E400F8B7D5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				435B5B3E14FBFDFC0051EF11 /* KodiakResources.bundle */,
+				43F4E49B1622B4310017B116 /* KodiakReporting.framework */,
+				43F4E4991622B42C0017B116 /* KodiakResources.bundle */,
 				430B068A14F88FF200F8B7D5 /* Sounds */,
 				430B066214F88EEE00F8B7D5 /* Images */,
 				430B060E14F841E400F8B7D5 /* SpellingJungle-Info.plist */,
@@ -410,7 +410,7 @@
 				43AAA26914FB7C5F00EDE5B0 /* NiceWorkViewController.xib in Resources */,
 				43AAA26B14FB7C7400EDE5B0 /* nicework.png in Resources */,
 				43AAA26D14FB7F8B00EDE5B0 /* trophy.png in Resources */,
-				435B5B3F14FBFDFC0051EF11 /* KodiakResources.bundle in Resources */,
+				43F4E49A1622B42C0017B116 /* KodiakResources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,6 +505,7 @@
 					"\"/Users/bengotow/Desktop/Kodiak_75593b6d3bb4/iOS SDK/build/Debug-iphonesimulator\"",
 					"\"$(SRCROOT)/../../iOS SDK/build/Debug-universal\"",
 					"\"$(SRCROOT)/../../iOS SDK/Releases/Kodiak iOS SDK 1.0\"",
+					"\"$(SRCROOT)/../..\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SpellingJungle/SpellingJungle-Prefix.pch";
@@ -526,6 +527,7 @@
 					"\"/Users/bengotow/Desktop/Kodiak_75593b6d3bb4/iOS SDK/build/Debug-iphonesimulator\"",
 					"\"$(SRCROOT)/../../iOS SDK/build/Debug-universal\"",
 					"\"$(SRCROOT)/../../iOS SDK/Releases/Kodiak iOS SDK 1.0\"",
+					"\"$(SRCROOT)/../..\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SpellingJungle/SpellingJungle-Prefix.pch";

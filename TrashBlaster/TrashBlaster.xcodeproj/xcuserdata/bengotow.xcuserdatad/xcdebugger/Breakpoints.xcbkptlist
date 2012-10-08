@@ -13,7 +13,7 @@
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "419"
          endingLineNumber = "419"
-         landmarkName = "-beginRegistration:"
+         landmarkName = "-returnToWelcomeScreenDelayed"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
@@ -21,11 +21,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "../../iOS SDK/KodiakReporting/KodiakReportingManager.m"
-         timestampString = "355693158.470475"
+         timestampString = "352853035.097167"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "468"
-         endingLineNumber = "468"
+         startingLineNumber = "454"
+         endingLineNumber = "454"
          landmarkName = "-loadSavedState"
          landmarkType = "5">
       </FileBreakpoint>

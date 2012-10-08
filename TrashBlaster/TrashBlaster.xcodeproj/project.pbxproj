@@ -11,8 +11,6 @@
 		4302E58C14757F2E0095FE0E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4302E58B14757F2E0095FE0E /* SystemConfiguration.framework */; };
 		4302E5911475801C0095FE0E /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4302E5901475801C0095FE0E /* MobileCoreServices.framework */; };
 		4302E593147580280095FE0E /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4302E592147580280095FE0E /* libz.dylib */; };
-		430768921561B2FC00F240E9 /* KodiakReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 430768911561B2FC00F240E9 /* KodiakReporting.framework */; };
-		430768941561B2FF00F240E9 /* KodiakResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 430768931561B2FF00F240E9 /* KodiakResources.bundle */; };
 		431F8DEE1471C86300D88804 /* win.png in Resources */ = {isa = PBXBuildFile; fileRef = 431F8DED1471C86300D88804 /* win.png */; };
 		431F8E131471D1AB00D88804 /* sky_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 431F8E081471D1AB00D88804 /* sky_1.png */; };
 		431F8E141471D1AB00D88804 /* sky_10.png in Resources */ = {isa = PBXBuildFile; fileRef = 431F8E091471D1AB00D88804 /* sky_10.png */; };
@@ -108,6 +106,8 @@
 		43740B8F1471B37E00244031 /* game_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 43740B8E1471B37E00244031 /* game_background.png */; };
 		43740B921471B4C200244031 /* TrashItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 43740B911471B4C200244031 /* TrashItem.m */; };
 		43740B951471B4CD00244031 /* MathQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 43740B941471B4CD00244031 /* MathQuestion.m */; };
+		4398F818150A6933008C5BCE /* KodiakResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4398F817150A6933008C5BCE /* KodiakResources.bundle */; };
+		4398F81A150A6936008C5BCE /* KodiakReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4398F819150A6936008C5BCE /* KodiakReporting.framework */; };
 		43992333147736B60033A705 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 43992331147736B60033A705 /* Default-Landscape~ipad.png */; };
 		43992334147736B60033A705 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 43992332147736B60033A705 /* icon.png */; };
 		43AAA27614FB835D00EDE5B0 /* libFinch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 43AAA27514FB835C00EDE5B0 /* libFinch.a */; };
@@ -135,8 +135,6 @@
 		4302E58B14757F2E0095FE0E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		4302E5901475801C0095FE0E /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		4302E592147580280095FE0E /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		430768911561B2FC00F240E9 /* KodiakReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KodiakReporting.framework; path = "../../iOS SDK/Releases/Kodiak iOS SDK 1.0.3/KodiakReporting.framework"; sourceTree = "<group>"; };
-		430768931561B2FF00F240E9 /* KodiakResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = KodiakResources.bundle; path = "../../../iOS SDK/Releases/Kodiak iOS SDK 1.0.3/KodiakResources.bundle"; sourceTree = "<group>"; };
 		431F8DED1471C86300D88804 /* win.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = win.png; sourceTree = "<group>"; };
 		431F8E081471D1AB00D88804 /* sky_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sky_1.png; sourceTree = "<group>"; };
 		431F8E091471D1AB00D88804 /* sky_10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sky_10.png; sourceTree = "<group>"; };
@@ -249,6 +247,8 @@
 		43740B911471B4C200244031 /* TrashItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrashItem.m; sourceTree = "<group>"; };
 		43740B931471B4CD00244031 /* MathQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MathQuestion.h; sourceTree = "<group>"; };
 		43740B941471B4CD00244031 /* MathQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MathQuestion.m; sourceTree = "<group>"; };
+		4398F817150A6933008C5BCE /* KodiakResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = KodiakResources.bundle; path = ../../KodiakResources.bundle; sourceTree = SOURCE_ROOT; };
+		4398F819150A6936008C5BCE /* KodiakReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KodiakReporting.framework; path = ../../KodiakReporting.framework; sourceTree = SOURCE_ROOT; };
 		43992331147736B60033A705 /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
 		43992332147736B60033A705 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		43AAA27514FB835C00EDE5B0 /* libFinch.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFinch.a; sourceTree = "<group>"; };
@@ -290,7 +290,7 @@
 				43740B061471A74B00244031 /* Foundation.framework in Frameworks */,
 				43740B081471A74B00244031 /* CoreGraphics.framework in Frameworks */,
 				43AAA27614FB835D00EDE5B0 /* libFinch.a in Frameworks */,
-				430768921561B2FC00F240E9 /* KodiakReporting.framework in Frameworks */,
+				4398F81A150A6936008C5BCE /* KodiakReporting.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,9 +414,9 @@
 		43740B021471A74B00244031 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				430768911561B2FC00F240E9 /* KodiakReporting.framework */,
 				43AAA27514FB835C00EDE5B0 /* libFinch.a */,
 				4302E592147580280095FE0E /* libz.dylib */,
+				4398F819150A6936008C5BCE /* KodiakReporting.framework */,
 				4302E5901475801C0095FE0E /* MobileCoreServices.framework */,
 				4302E58B14757F2E0095FE0E /* SystemConfiguration.framework */,
 				4302E58914757F240095FE0E /* CFNetwork.framework */,
@@ -451,7 +451,7 @@
 		43740B0A1471A74B00244031 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				430768931561B2FF00F240E9 /* KodiakResources.bundle */,
+				4398F817150A6933008C5BCE /* KodiakResources.bundle */,
 				431F8FF11471FD8300D88804 /* Sounds */,
 				43740B201471B0FC00244031 /* Images */,
 				43740B0B1471A74B00244031 /* TrashBlaster-Info.plist */,
@@ -706,7 +706,7 @@
 				43EEA0F614722B7E00507C2D /* power_down.wav in Resources */,
 				43992333147736B60033A705 /* Default-Landscape~ipad.png in Resources */,
 				43992334147736B60033A705 /* icon.png in Resources */,
-				430768941561B2FF00F240E9 /* KodiakResources.bundle in Resources */,
+				4398F818150A6933008C5BCE /* KodiakResources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -748,7 +748,6 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -764,7 +763,6 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -795,11 +793,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Ben Gotow (7S88XR489C)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Ben Gotow (7EKP92J76Y)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
-					"\"$(SRCROOT)/../../iOS SDK/Releases/Kodiak iOS SDK 1.0.3\"",
+					"\"$(SRCROOT)/../../iOS SDK/build/Debug-iphonesimulator\"",
+					"\"$(SRCROOT)/../../iOS SDK/build/Debug-universal\"",
+					"\"$(SRCROOT)/../..\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TrashBlaster/TrashBlaster-Prefix.pch";
@@ -811,7 +811,7 @@
 					"\"$(SRCROOT)/../../iOS SDK\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "72239363-C8D5-4545-8A3C-3554ABF44894";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "810FBEA9-0F12-43C2-A201-BDE6124903EE";
 				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
@@ -824,7 +824,9 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
-					"\"$(SRCROOT)/../../iOS SDK/Releases/Kodiak iOS SDK 1.0.3\"",
+					"\"$(SRCROOT)/../../iOS SDK/build/Debug-iphonesimulator\"",
+					"\"$(SRCROOT)/../../iOS SDK/build/Debug-universal\"",
+					"\"$(SRCROOT)/../..\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TrashBlaster/TrashBlaster-Prefix.pch";

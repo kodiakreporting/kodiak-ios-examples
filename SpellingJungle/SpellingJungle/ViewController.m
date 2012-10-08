@@ -42,7 +42,6 @@
     
     // Configure Kodiak with an API key
     [[KodiakReportingManager sharedManager] setAPIKey: @"1a9da573260e68f2a03b2cc3c60d6f6595c6aae8"];
-    [[KodiakReportingManager sharedManager] useSecondaryAPIServer: @"http://localhost:8080"];//http://kodiak2-bengotow.dotcloud.com"];
     
     // Get a new instance of a KodiakButton
     KodiakButton * btn = [[KodiakReportingManager sharedManager] kodiakButtonWithType:KodiakButtonTypeThin];
@@ -147,6 +146,11 @@
     UnscrambleViewController * c = [[UnscrambleViewController alloc] init];
     [self presentModalViewController:c animated:YES];
     [c release];
+}
+
+- (NSUInteger)supportedInterfaceOrientations
+{
+    return UIInterfaceOrientationMaskPortrait | UIInterfaceOrientationMaskPortraitUpsideDown;
 }
 
 @end

@@ -21,9 +21,9 @@
     [[UIApplication sharedApplication] setStatusBarHidden: NO];
     
     // Add the view controller's view to the window and display.
-    [self.window addSubview:viewController.view];
+    [self.window setRootViewController: viewController];
     [self.window makeKeyAndVisible];
-
+    
     [[KodiakReportingManager sharedManager] setAPIKey: @"df8e095858bc745c9536edccfb612743190a2321"];
     [[KodiakReportingManager sharedManager] setLoggingEnabled: YES];
     
@@ -68,6 +68,10 @@
      */
 }
 
+- (NSUInteger)supportedInterfaceOrientations
+{
+    return UIInterfaceOrientationMaskLandscape;
+}
 
 #pragma mark -
 #pragma mark Memory management
